@@ -25,8 +25,8 @@ async function httpcaller(gottoken){
 }
 
 router.get('/redirect',async(req,res)=>{
-    const maintoken=await codparser(req.url,httpcaller)
-    console.log(maintoken)    
+    const finaluserdatas=await codparser(req.url,httpcaller)
+    console.log(finaluserdatas)    
 })
 
 
